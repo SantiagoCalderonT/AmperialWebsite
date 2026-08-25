@@ -1,0 +1,185 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+	position: fixed;   /* Lo fija con respecto a la pantalla */
+    top: 0;            /* Pegado a la parte superior */
+    left: 0;           /* Pegado a la izquierda */
+    width: 100%;       /* Ocupa todo el ancho */
+    z-index: 1000;     /* Asegura que quede por encima del resto del contenido */
+    background-color: #242b3d;
+    color: #fff;
+}
+
+.top-bar {
+	padding: 10px 0;
+    /*background-color: #f7b11c; /* Asegura que mantenga su color de fondo */
+    border-bottom: 5px solid rgba(210, 175, 55, 1.0);
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info span {
+    margin-right: 20px;
+}
+
+.top-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.main-header {
+    padding: 10px 0;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Ajusta la altura del logo */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+	margin-top: 110px;
+    background-color: #242b3d;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-content img {
+    max-width: 20%;
+    height: auto;
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+.hero-content .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.bienvenida {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.hero h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #ddd;
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+
+/* Categorías Section */
+.categorias {
+    padding: 50px 0;
+}
+
+.categorias .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.categoria {
+    width: 100%; /* Ajusta el ancho de las categorías */
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.categoria img {
+    max-width: 500px; /* Ajusta el tamaño de las imágenes de categoría */
+    height: auto;
+    margin-right: 30px;
+	margin-left: 30px;
+}
+
+.categoria-info h2 {
+    margin: 0;
+}
+
+.categoria-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 100;
+}
