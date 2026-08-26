@@ -1,5 +1,11 @@
 /* Estilos generales */
-body {
+html {
+	scroll-behavior: smooth; 
+	scroll-padding-top: 110px;
+}
+
+body 
+{
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f5f5f5;
@@ -35,7 +41,12 @@ header {
 }
 
 .contact-info span {
-    margin-right: 20px;
+    margin-right: 10px;
+}
+
+.contact-info a {
+	color: #fff;
+	text-decoration: none;
 }
 
 .top-links a {
