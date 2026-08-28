@@ -129,14 +129,14 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    margin-top: 120px;
+    margin-top: 90px;
     background-color: #242b3d;
     padding: 50px 0;
     text-align: center;
 }
 
 .hero-content img {
-    max-width: 120px;
+    max-width: 40%;
     height: auto;
 }
 
