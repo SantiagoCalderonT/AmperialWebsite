@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta property="og:title" content="Amperial | Suministros Eléctricos" />
-	<meta property="og:description" content="Calidad y compromiso para impulsar tu negocio" />
-	<meta property="og:image" content="https://santiagocalderont.github.io/AmperialWebsite/res/img/logo.jpg" />
-    
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amperial - Suministros Eléctricos</title>
-	<link rel="icon" type="image/png" href="res/favicon.png">
+
+    <!-- Metadatos Open Graph -->
+    <meta property="og:title" content="Amperial | Suministros Eléctricos" />
+    <meta property="og:description" content="Calidad y compromiso para impulsar tu negocio" />
+    <meta property="og:image" content="https://santiagocalderont.github.io/AmperialWebsite/res/img/logo.jpg" />
+    
+    <link rel="icon" type="image/png" href="res/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
 </head>
@@ -16,39 +18,38 @@
 <body>
 
     <header>
+        <!-- Barra superior de contacto -->
         <div class="top-bar">
             <div class="container">
                 <div class="contact-info">
-                    <span><a href="tel:+525580453447"><i class="fas fa-phone"></i></span>
-						<span>55 8045 3447</a></span>
-					<span></span>
-					<span><a href="mailto:amperial.compras@gmail.com"><i class="fas fa-envelope"></i></span>
-						<span>amperial.compras@gmail.com</a></span>
-                    <!-- <span><i class="fab fa-facebook-f"></i></span><b>Amperial MX</b> -->
+                    <a href="tel:+525580453447"><i class="fas fa-phone"></i> 55 8045 3447</a>
+                    <a href="mailto:amperial.compras@gmail.com"><i class="fas fa-envelope"></i> amperial.compras@gmail.com</a>
                 </div>
                 <div class="top-links">
-					<a><i><strong>Calidad y compromiso para impulsar tu negocio</strong></i></a>
-                    <!-- <a href="#">Supplier</a> -->
-                    <!-- <a href="#">Ofertas</a> -->
-                    <!-- <a href="#">Placas</a> -->
+                    <span><i><strong>Calidad y compromiso para impulsar tu negocio</strong></i></span>
                 </div>
             </div>
         </div>
+
+        <!-- Encabezado Principal y Menú -->
         <div class="main-header">
             <div class="container">
                 <div class="logo">
                     <img src="res/img/logo.jpg" alt="Amperial Suministros Eléctricos"> 
                 </div>
-                <nav>
+
+                <!-- Botón Menú Hamburguesa -->
+                <button class="menu-toggle js-menu-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Menú de navegación -->
+                <nav class="js-nav">
                     <ul>
                         <li><a href="#top">Inicio</a></li>
                         <li><a href="#hero">Nosotros</a></li>
-                        <li><a href="#prod">Productos <i class="fas fa-chevron-down"></i></a>
-                            <!-- Menú desplegable para productos -->
-                        </li>
-                        <li><a href="#">Ofertas <i class="fas fa-chevron-down"></i></a>
-                            <!-- Menú desplegable para ofertas -->
-                        </li>
+                        <li><a href="#prod">Productos <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="#">Ofertas <i class="fas fa-chevron-down"></i></a></li>
                         <li><a href="#">Contacto</a></li>
                         <li><a href="#"><i class="fas fa-search"></i></a></li>
                     </ul>
@@ -58,56 +59,50 @@
     </header>
 
     <main>
+        <!-- Sección Hero / Nosotros -->
         <section class="hero" id="hero">
             <div class="container">
                 <div class="hero-content">
                     <img src="res/img/logo.jpg" alt="Línea Estándar"> 
-                    <h1></h1>
-					<div class="container">
-						<h2>Bienvenido a Amperial</h2>
-						<p>En <strong>Amperial</strong> somos especialistas en la distribución y comercialización de suministros eléctricos de alta calidad para proyectos residenciales, comerciales e industriales. Nos dedicamos a ser el aliado estratégico de electricistas, contratistas y familias, ofreciendo un amplio catálogo de productos, desde clavijas y portalámparas hasta interruptores y componentes especializados, respaldados por asesoría técnica y un servicio confiable. Tu seguridad y la potencia de tus instalaciones son nuestra prioridad.</p>
-					</div>
+                    <h2>Bienvenido a Amperial</h2>
+                    <p>En <strong>Amperial</strong> somos especialistas en la distribución y comercialización de suministros eléctricos de alta calidad para proyectos residenciales, comerciales e industriales. Nos dedicamos a ser el aliado estratégico de electricistas, contratistas y familias, ofreciendo un amplio catálogo de productos, desde clavijas y portalámparas hasta interruptores y componentes especializados, respaldados por asesoría técnica y un servicio confiable. Tu seguridad y la potencia de tus instalaciones son nuestra prioridad.</p>
                     <a href="#" class="btn">Ver más ></a>
                 </div>
             </div>
         </section>
-		
-		<section class="bienvenida">
-			
-			
-			
-		</section>
 
-
+        <!-- Productos -->
         <section class="categorias" id="prod">
             <div class="container">
-				<h1>Nuestros productos</h1>
-                <div class="categoria">
-                    <img src="res/img/clavijas.jpg" alt="Clavijas"> 
-					<div class="categoria-info">
-                        <h2>CLAVIJAS</h2>
-                        <a href="#">Ver más ></a>
+                <h1 class="titulo-seccion">Nuestros productos</h1>
+                <div class="grid-categorias">
+                    <div class="categoria">
+                        <img src="res/img/clavijas.jpg" alt="Clavijas"> 
+                        <div class="categoria-info">
+                            <h2>CLAVIJAS</h2>
+                            <a href="#">Ver más ></a>
+                        </div>
                     </div>
-                </div>
-                <div class="categoria">
-                    <img src="res/img/sockets.jpg" alt="Portalámparas"> 
-                    <div class="categoria-info">
-                        <h2>PORTALÁMPARAS</h2>
-                        <a href="#">Ver más ></a>
+                    <div class="categoria">
+                        <img src="res/img/sockets.jpg" alt="Portalámparas"> 
+                        <div class="categoria-info">
+                            <h2>PORTALÁMPARAS</h2>
+                            <a href="#">Ver más ></a>
+                        </div>
                     </div>
-                </div>
-                <div class="categoria">
-                    <img src="res/img/interruptores.jpg" alt="Interruptores"> 
-					<div class="categoria-info">
-                        <h2>INTERRUPTORES</h2>
-                        <a href="#">Ver más ></a>
+                    <div class="categoria">
+                        <img src="res/img/interruptores.jpg" alt="Interruptores"> 
+                        <div class="categoria-info">
+                            <h2>INTERRUPTORES</h2>
+                            <a href="#">Ver más ></a>
+                        </div>
                     </div>
-                </div>
-                <div class="categoria">
-                    <img src="res/img/apagadores.jpg" alt="Apagadores"> 
-                    <div class="categoria-info">
-                        <h2>APAGADORES</h2>
-                        <a href="#">Ver más ></a>
+                    <div class="categoria">
+                        <img src="res/img/apagadores.jpg" alt="Apagadores"> 
+                        <div class="categoria-info">
+                            <h2>APAGADORES</h2>
+                            <a href="#">Ver más ></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -120,9 +115,12 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/525580453447" class="whatsapp-float">
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/525580453447" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i> ¿Cómo puedo ayudarte?
     </a>
 
+    <!-- Script ejecutable -->
+    <script src="js/script.js"></script>
 </body>
 </html>
