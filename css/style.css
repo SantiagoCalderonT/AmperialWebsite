@@ -136,7 +136,7 @@ nav a:hover {
 }
 
 .hero-content img {
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -261,6 +261,11 @@ footer {
         background-color: transparent;
         color: rgba(210, 175, 55, 1.0);
     }
+	
+	.hero-content img {
+		max-width: 40%;
+		height: auto;
+	}
 
     .grid-categorias {
         flex-direction: row;

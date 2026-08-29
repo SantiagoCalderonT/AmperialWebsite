@@ -1,0 +1,173 @@
+/* ==========================================
+   ESTILOS GENERALES Y ESTRUCTURA
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Grillas Flexibles */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* ==========================================
+   SECCIÓN HERO / INTRODUCCIÓN
+   ========================================== */
+.nosotros-hero {
+    background-color: #ffffff;
+    padding: 60px 0 40px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.nosotros-hero h1 {
+    font-size: 2.5rem;
+    color: #1a2332; /* Azul oscuro corporativo */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.nosotros-hero h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #f7b11c; /* Amarillo Amperial */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.nosotros-hero p {
+    font-size: 1.15rem;
+    color: #555555;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   IMÁGENES DE REFORZAMIENTO
+   ========================================== */
+.nosotros-img {
+    padding: 30px 0;
+}
+
+.nosotros-img img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================
+   MISIÓN Y VISIÓN
+   ========================================== */
+.mision-vision {
+    padding: 50px 0;
+    background-color: #f2f4f7;
+}
+
+.mision-vision .card {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 8px;
+    border-left: 5px solid #f7b11c;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.mision-vision .card:hover {
+    transform: translateY(-5px);
+}
+
+.mision-vision h2 {
+    font-size: 1.8rem;
+    color: #1a2332;
+    margin-bottom: 15px;
+}
+
+.mision-vision p {
+    color: #666666;
+    font-size: 1rem;
+}
+
+/* ==========================================
+   NUESTROS VALORES
+   ========================================== */
+.valores {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.valores h2 {
+    font-size: 2rem;
+    color: #1a2332;
+    margin-bottom: 40px;
+}
+
+.valor-item {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e9e9e9;
+    text-align: left;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valor-item:hover {
+    border-color: #f7b11c;
+    box-shadow: 0 4px 15px rgba(247, 177, 28, 0.15);
+}
+
+.valor-item h3 {
+    font-size: 1.25rem;
+    color: #1a2332;
+    margin-bottom: 10px;
+}
+
+.valor-item p {
+    font-size: 0.95rem;
+    color: #666666;
+}
+
+/* ==========================================
+   ADAPTABILIDAD RESPONSIVA (MÓVILES)
+   ========================================== */
+@media (max-width: 768px) {
+    .nosotros-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .nosotros-hero p {
+        font-size: 1rem;
+    }
+    
+    .mision-vision .card {
+        padding: 25px;
+    }
+}
