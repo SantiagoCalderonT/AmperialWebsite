@@ -37,6 +37,7 @@ body {
    SECCIÓN HERO / INTRODUCCIÓN
    ========================================== */
 .nosotros-hero {
+    padding-top: 110px;
     background-color: #ffffff;
     padding: 60px 0 40px;
     text-align: center;
