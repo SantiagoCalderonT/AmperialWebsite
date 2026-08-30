@@ -1,23 +1,134 @@
-/* ==========================================
-   ESTILOS GENERALES Y ESTRUCTURA
-   ========================================== */
+/* Estilos generales */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth; 
+    scroll-padding-top: 130px; /* Compensa la barra fija */
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
     color: #333333;
-    background-color: #f9f9f9;
-    line-height: 1.6;
+    background-color: #f5f5f5;
+    line-height: 1.5;
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #242b3d;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.top-bar {
+    padding: 8px 0;
+    border-bottom: 5px solid rgba(210, 175, 55, 1.0);
+    font-size: 0.9em;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-links a, .top-links span {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-header {
+    padding: 10px 0;
+    position: relative;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    display: block;
+}
+
+/* Botón Hamburguesa */
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Navegación para Móviles */
+nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #242b3d;
+    border-top: 1px solid #334155;
+}
+
+nav.active {
+    display: block;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 15px 20px;
+}
+
+nav a:hover {
+    background-color: #242b3d;
 }
 
 /* Grillas Flexibles */
@@ -37,7 +148,7 @@ body {
    SECCIÓN HERO / INTRODUCCIÓN
    ========================================== */
 .nosotros-hero {
-    padding-top: 110px;
+    margin-top: 100px;
     background-color: #ffffff;
     padding: 60px 0 40px;
     text-align: center;
@@ -46,7 +157,7 @@ body {
 
 .nosotros-hero h1 {
     font-size: 2.5rem;
-    color: #1a2332; /* Azul oscuro corporativo */
+    color: #242b3d; /* Azul Amperial */
     margin-bottom: 20px;
     position: relative;
 }
@@ -56,7 +167,7 @@ body {
     display: block;
     width: 60px;
     height: 4px;
-    background-color: #f7b11c; /* Amarillo Amperial */
+    background-color: #D2AF37; /* Amarillo Amperial */
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -96,7 +207,7 @@ body {
     background-color: #ffffff;
     padding: 35px;
     border-radius: 8px;
-    border-left: 5px solid #f7b11c;
+    border-left: 5px solid #D2AF37;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
@@ -107,7 +218,7 @@ body {
 
 .mision-vision h2 {
     font-size: 1.8rem;
-    color: #1a2332;
+    color: #242b3d;
     margin-bottom: 15px;
 }
 
@@ -127,7 +238,7 @@ body {
 
 .valores h2 {
     font-size: 2rem;
-    color: #1a2332;
+    color: #242b3d;
     margin-bottom: 40px;
 }
 
@@ -141,19 +252,42 @@ body {
 }
 
 .valor-item:hover {
-    border-color: #f7b11c;
-    box-shadow: 0 4px 15px rgba(247, 177, 28, 0.15);
+    border-color: #D2AF37;
+    box-shadow: 0 4px 15px rgba(210, 175, 55, 0.15);
 }
 
 .valor-item h3 {
     font-size: 1.25rem;
-    color: #1a2332;
+    color: #242b3d;
     margin-bottom: 10px;
 }
 
 .valor-item p {
     font-size: 0.95rem;
     color: #666666;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1f2c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* WhatsApp Flotante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    z-index: 100;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 /* ==========================================
@@ -172,3 +306,32 @@ body {
         padding: 25px;
     }
 }
+
+/* --- ADAPTACIÓN A PANTALLAS GRANDES (Escritorio / Tablet horizontal) --- */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none; /* Oculta botón hamburguesa */
+    }
+
+    nav {
+        display: block;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        border: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-left: 20px;
+        border: none;
+    }
+
+    nav a {
+        padding: 0;
+    }
+
+    nav a:hover {
+        background-color: transparent;
+        color: rgba(210, 175, 55, 1.0);
+    }
