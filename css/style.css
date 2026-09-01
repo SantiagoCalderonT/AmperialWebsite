@@ -177,12 +177,35 @@ nav a:hover {
 /* Categorías Section */
 .categorias {
     padding: 50px 0;
+	text-align: center;
+}
+
+.categorias p {
+    font-size: 1.2em;
+    line-height: 1.6;
 }
 
 .titulo-seccion {
     width: 100%;
     margin-bottom: 30px;
 	font-size: 2em;
+}
+
+.categorias h1 {
+    font-size: 2.5rem;
+    color: #242b3d; /* Azul Amperial */ 
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.categorias h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #D2AF37; /* Amarillo Amperial */
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
 
 .grid-categorias {
@@ -238,6 +261,55 @@ nav a:hover {
     border-radius: 5px;
     margin-top: 20px;
     display: inline-block;
+}
+
+/* Brand Section */
+.brands {
+    padding: 50px 0;
+	text-align: center;
+}
+
+.brands h1 {
+    font-size: 2.5rem;
+    color: #242b3d; /* Azul Amperial */ 
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.brands h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #D2AF37; /* Amarillo Amperial */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.brands p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.brand-logos {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.brand-logos img {
+	max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+	border-radius: 10px;
 }
 
 /* Footer */
@@ -311,4 +383,15 @@ footer {
     .categoria img {
         max-width: 250px;
     }
+	
+	/* .brands { */
+        /* width: calc(50% - 10px); /* 2 columnas */ */
+        /* flex-direction: row; */
+        /* text-align: left; */
+    /* } */
+
+    /* .brand-logos img { */
+        /* max-width: 250px; */
+    /* } */
 }
+
