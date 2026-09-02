@@ -295,17 +295,18 @@ nav a:hover {
     padding: 20px;
     border-radius: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Alinea los logos de forma horizontal */
+    flex-wrap: wrap;     /* Permite que pasen al siguiente renglón */
+    justify-content: center; /* Centra los logos horizontalmente */
     align-items: center;
-    text-align: center;
-    gap: 15px;
+    gap: 20px;           /* Espaciado entre logos */
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .brand-logos img {
-	max-width: 100%;
+	max-width: 150%;
     height: auto;
-    max-height: 200px;
+    max-height: 100px;
     object-fit: contain;
 	border-radius: 10px;
 }
@@ -383,7 +384,8 @@ footer {
     }
 
     .brand-logos img {
-        max-width: 250px;
+        max-width: 400px; 
+        height: auto;
     }
 }
 
