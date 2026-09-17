@@ -275,3 +275,62 @@ footer {
 		float: right;
 	}
 }
+
+
+
+/* Ficha técnica del producto
+.producto-detalle {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.producto-codigo {
+    color: rgba(210, 175, 55, 1.0);
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.producto-destacado {
+    color: #25d366;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+.producto-especificaciones h3 {
+    border-bottom: 2px solid #242b3d;
+    padding-bottom: 8px;
+    margin-top: 20px;
+    color: #242b3d;
+}
+
+/* Estilos de la tabla
+.tabla-especificaciones {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabla-especificaciones th,
+.tabla-especificaciones td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+.tabla-especificaciones th {
+    background-color: #f8fafc;
+    color: #242b3d;
+    font-weight: bold;
+    width: 40%;
+}
+
+.tabla-especificaciones td {
+    color: #475569;
+}*/
