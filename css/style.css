@@ -8,13 +8,6 @@ html {
     scroll-padding-top: 90px; /* Compensa la barra fija */
 }
 
-/*
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f5f5f5;
-}*/
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin: 0;
@@ -136,6 +129,127 @@ nav a:hover {
     background-color: #1a1f2c;
 }
 
+/* --- Estilos del Buscador Animado con Miniatura (Fondo Blanco) --- */
+.search-menu-item {
+    position: relative;
+    display: block;
+}
+
+.search-btn-icon {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    width: 100%;
+    text-align: left;
+}
+
+.search-btn-icon:hover {
+    color: #D2AF37;
+}
+
+.search-popup-container {
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    
+    /* Animación oculta por defecto */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    z-index: 1200;
+}
+
+.search-popup-container.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(5px);
+}
+
+#global-search {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
+}
+
+#global-search:focus {
+    border-color: #D2AF37;
+}
+
+.search-dropdown {
+    margin-top: 8px;
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    text-align: left;
+    transition: background 0.2s;
+    font-size: 0.85rem;
+}
+
+.search-result-item:hover {
+    background-color: #f8f9fa;
+}
+
+.search-thumb {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    background-color: #f1f5f9;
+    border-radius: 4px;
+    padding: 2px;
+    flex-shrink: 0;
+    border: 1px solid #e2e8f0;
+}
+
+.search-info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.search-info strong {
+    font-size: 0.85rem;
+    color: #242b3d;
+}
+
+.search-info span {
+    font-size: 0.78rem;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.no-results {
+    padding: 12px;
+    color: #64748b;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
 /* Hero Section */
 .hero {
     margin-top: 90px;
@@ -193,7 +307,7 @@ nav a:hover {
 
 .categorias h1 {
     font-size: 2.5rem;
-    color: #242b3d; /* Azul Amperial */ 
+    color: #242b3d; 
     margin-bottom: 20px;
     position: relative;
 }
@@ -203,7 +317,7 @@ nav a:hover {
     display: block;
     width: 60px;
     height: 4px;
-    background-color: #D2AF37; /* Amarillo Amperial */
+    background-color: #D2AF37;
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -250,17 +364,6 @@ nav a:hover {
     display: inline-block;
 }
 
-.categoria-info .btn {
-    background-color: rgba(210, 175, 55, 1.0);
-    color: #242b3d;
-    font-weight: bold;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
 /* Brand Section */
 .brands {
     padding: 50px 0;
@@ -269,7 +372,7 @@ nav a:hover {
 
 .brands h1 {
     font-size: 2.5rem;
-    color: #242b3d; /* Azul Amperial */ 
+    color: #242b3d; 
     margin-bottom: 20px;
     position: relative;
 }
@@ -279,7 +382,7 @@ nav a:hover {
     display: block;
     width: 60px;
     height: 4px;
-    background-color: #D2AF37; /* Amarillo Amperial */
+    background-color: #D2AF37;
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -295,11 +398,11 @@ nav a:hover {
     padding: 20px;
     border-radius: 5px;
     display: flex;
-    flex-direction: row; /* Alinea los logos de forma horizontal */
-    flex-wrap: wrap;     /* Permite que pasen al siguiente renglón */
-    justify-content: center; /* Centra los logos horizontalmente */
+    flex-direction: row;
+    flex-wrap: wrap;     
+    justify-content: center; 
     align-items: center;
-    gap: 20px;           /* Espaciado entre logos */
+    gap: 20px;           
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
@@ -319,7 +422,7 @@ nav a:hover {
 
 .contacto h1 {
     font-size: 2.5rem;
-    color: #242b3d; /* Azul Amperial */
+    color: #242b3d; 
     margin-bottom: 20px;
     position: relative;
 }
@@ -329,7 +432,7 @@ nav a:hover {
     display: block;
     width: 60px;
     height: 4px;
-    background-color: #D2AF37; /* Amarillo Amperial */
+    background-color: #D2AF37;
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -436,7 +539,7 @@ footer {
 /* --- ADAPTACIÓN A PANTALLAS GRANDES (Escritorio / Tablet horizontal) --- */
 @media (min-width: 768px) {
     .menu-toggle {
-        display: none; /* Oculta botón hamburguesa */
+        display: none; 
     }
 
     nav {
@@ -461,6 +564,22 @@ footer {
         background-color: transparent;
         color: rgba(210, 175, 55, 1.0);
     }
+
+    /* Adaptación del Buscador Animado en Escritorio */
+    .search-menu-item {
+        display: inline-block;
+    }
+
+    .search-btn-icon {
+        padding: 0;
+        width: auto;
+    }
+
+    .search-popup-container {
+        left: auto;
+        right: 0;
+        width: 300px;
+    }
 	
 	.hero-content img {
 		max-width: 40%;
@@ -473,7 +592,7 @@ footer {
     }
 
     .categoria {
-        width: calc(50% - 10px); /* 2 columnas */
+        width: calc(50% - 10px); 
         flex-direction: row;
         text-align: left;
     }
@@ -492,7 +611,6 @@ footer {
     }
 
     .contacto-card {
-        width: calc(50% - 10px); /* 2 columnas en pantallas medianas y grandes */
+        width: calc(50% - 10px); 
     }
 }
-

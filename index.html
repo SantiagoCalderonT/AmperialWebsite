@@ -12,7 +12,7 @@
     
     <link rel="icon" type="image/png" href="res/favicon.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -48,10 +48,20 @@
                     <ul>
                         <li><a href="#top">Inicio</a></li>
                         <li><a href="us.html">Nosotros</a></li>
-                        <li><a href="#prod">Productos <!-- <i class="fas fa-chevron-down"></i> --></a></li>
-                        <li><a href="#brands">Marcas <!-- <i class="fas fa-chevron-down"></i> --></a></li>
+                        <li><a href="#prod">Productos</a></li>
+                        <li><a href="#brands">Marcas</a></li>
                         <li><a href="#contact">Contacto</a></li>
-                        <!-- <li><a href="#"><i class="fas fa-search"></i></a></li> -->
+                        
+                        <!-- Buscador Animado con Ícono de Lupa -->
+                        <li class="search-menu-item">
+                            <button id="search-toggle" class="search-btn-icon" aria-label="Abrir buscador">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <div id="search-container" class="search-popup-container">
+                                <input type="text" id="global-search" placeholder="Buscar por clave o producto..." autocomplete="off">
+                                <div id="search-results-dropdown" class="search-dropdown"></div>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -113,16 +123,11 @@
                             <h2>CONECTORES</h2>
                         </div>
                     </a>
-                    <!-- <a href="damper.html" class="categoria"> -->
-                        <!-- <img src="res/img/apagadores.jpg" alt="Apagadores">  -->
-                        <!-- <div class="categoria-info"> -->
-                            <!-- <h2>APAGADORES</h2> -->
-                        <!-- </div> -->
-                    <!-- </a> -->
                 </div>
             </div>
         </section>
-		<section class="brands" id="brands">
+
+        <section class="brands" id="brands">
 			<div class="container">
 				<h1 class="titulo-seccion">Nuestras marcas</h1>
 				<p>Creemos en la durabilidad. Por eso, seleccionamos cuidadosamente a nuestros proveedores para ofrecerte equipos y materiales eléctricos de alto rendimiento.</p>
@@ -199,7 +204,8 @@
         <i class="fab fa-whatsapp"></i> ¿Cómo puedo ayudarte?
     </a>
 
-    <!-- Script ejecutable -->
+    <!-- Scripts ejecutables -->
+    <script src="js/products.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
